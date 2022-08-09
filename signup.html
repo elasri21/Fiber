@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="form">
+        <form action="index.html">
+            <div class="logo">Fiber</div>
+            <h1>Create your Fiber account</h1>
+            <div class="form-control">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" class="name field">
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="email field">
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="password field">
+                <img src="./Assets/hidepassword.svg" alt="eye" class="eye">
+            </div>
+            <div class="form-control with-check">
+                <input type="checkbox" name="term" id="term" class="check">
+                By creating an account on Fiber, you agree to the <br>
+                <a href="#">Terms & Conditions.</a>
+            </div>
+            <button class="with-bg sign-up" onclick="window.location.href='index.html'">Create Fiber Account</button>
+            <div class="old-user">
+                Already have an account? <button class="sign-in">Sign in</button>
+            </div>
+        </form>
+        <div class="illus">
+            <div class="image"><img src="./Assets/signup.png" alt="sign uppage"></div>
+            <div class="slider">
+                <h2>Unparalleled Templates</h2>
+                <p>
+                    Crafted by a team of professional designers, our <br>
+                    templates are eunparalleled in the market.
+                </p>
+                <div class="circles">
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle last"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

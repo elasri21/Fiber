@@ -1,0 +1,25 @@
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all .3s ease-in-out;
+    text-transform: capitalize;
+    color: $black;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    &:hover {
+        opacity: .9;
+    }
+    &.with-bg {
+        background-color: $btn-bg;
+        color: $white;
+    }
+    &.sign-in {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

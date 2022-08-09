@@ -1,0 +1,372 @@
+.illus-sec {
+    @media #{$small} {
+        padding: 30px 50px;
+        align-items: center;
+        justify-content: space-between;
+        .illus {
+            width: 45% !important;
+            margin-bottom: 0 !important;
+        }
+        .info {
+            width: 53% !important;
+            .contacts {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+            }
+            .checks {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    @media #{$mobile} {
+        flex-direction: column;
+        .illus {
+            order: 1;
+            margin-bottom: 20px;
+        }
+        .info{
+            order: 2;
+            .contacts {
+                text-align: center;
+                button {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                a {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .checks {
+                & > div {
+                    &:first-of-type {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    padding: 20px 20px;
+    display: flex;
+    .info {
+        .stars {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            img {
+                margin-right: 5px;
+            }
+            .rated {
+                margin-left: 10px;
+                font-size: 12px;
+                font-weight: 300;
+                color: $text-color;
+            }
+        }
+        .contacts {
+            a {
+                margin-left: 15px;
+                font-size: 15px;
+                font-weight: 600;
+                color: $btn-bg;
+                text-decoration: underline;
+            }
+        }
+        .checks {
+            margin-top: 20px;
+            & > div {
+                img {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+                span {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: $text-color;
+                    margin-right: 15px;
+                }
+
+            }
+            
+
+        }
+    }
+    .illus {
+        img {
+            width: 100%;
+        }
+    }
+    
+}
+
+//second section
+.why-fiber {
+    @media #{$small} {
+        padding: 30px 50px;
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            .item {
+                width: 32%;
+            }
+        }
+    }
+    padding: 20px 20px;
+    background-color: $white;
+    .why {
+        font-size: 13px;
+        font-weight: 600;
+        color: $btn-bg;
+    }
+    h2 {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .grid {
+        .item {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                color: $black;
+                margin: 10px 0 15px 0;
+            }
+        }
+    }
+}
+
+// start section with background
+.sec-with-bg {
+    @media #{$small} {
+        padding: 30px 50px;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .info {
+                width: 50%;
+            }
+            .illus{
+                width: 48%;
+            }
+        }
+
+    }
+    @media #{$mobile} {
+        .content {
+            .info {
+                margin-bottom: 20px;
+                button {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    padding: 20px 20px;
+    background-color: $white;
+    .content {
+        background-color: $btn-bg;
+        border-radius: 4px;
+        padding: 20px;
+        padding-bottom: 0;
+        .info {
+            h2 {
+                font-size: 22px;
+                color: $white;
+            }
+            p {
+                color: $flow-text;
+            }
+            button {
+                background-color: $white;
+                color: $btn-bg;
+            }
+        }
+        .illus {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// users section
+.users {
+    @media #{$small} {
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        .user {
+            width: 32%;
+            margin-bottom: 0;
+        }
+    }
+    background-color: $white;
+    padding: 20px 20px;
+    .user {
+        padding: 10px;
+        border: 1px solid $text-color;
+        background-color: $main-bg;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .name {
+                margin: 0;
+                h4 {
+                    margin: 16px;
+                    font-weight: 700;
+                    color: $btn-bg;
+                    padding: 0;
+                    margin: 0;
+                }
+                p {
+                    margin: 0 !important;
+                }
+            }
+        }
+        button {
+            width: 100%;
+            border: 1px solid $text-color;
+            color: $btn-bg;
+        }
+    }
+}
+// sign up page
+
+.form {
+    @media #{$small} {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        form {
+            width: 50%;
+            padding: 30px 50px !important;
+        }
+        .illus {
+            display: block;
+            width: 50%;
+            padding: 30px 50px !important;
+        }
+    }
+    @media #{$mobile} {
+        .illus {
+            display: none;
+        }
+    }
+    form {
+        padding: 30px 30px;
+        background-color: $white;
+       .logo {
+        font-size: 18px;
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 20px;
+       }
+       .form-control {
+        margin-bottom: 15px;
+        position: relative;
+        label {
+            font-weight: 600;
+        }
+        input {
+            border: 1px solid $text-color;
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            margin-top: 5px;
+            &.check {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+        }
+        img {
+            position: absolute;
+            right: 20px;
+            top: 32px;
+        }
+        &.with-check {
+            font-size: 14px;
+            color: $black;
+            a {
+                font-weight: 600;
+                color: $btn-bg;
+                text-decoration:underline;
+            }
+        }
+       }
+       .sign-up {
+        width: 100%;
+       }
+       .old-user {
+        margin-top: 12px;
+        color: $black;
+        font-size: 14px;
+        font-weight: 500;
+        button {
+            color: $btn-bg;
+        }
+       }
+    }
+    .illus {
+        background-color: $btn-bg;
+        .image {
+            width: 300px;
+            height: 250px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .slider {
+            text-align: center;
+            h2 {
+                color: $white;
+            }
+            p {
+                color: $flow-text;
+            }
+            .circles {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $flow-text;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    &:first-of-type {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

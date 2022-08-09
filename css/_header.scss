@@ -1,0 +1,88 @@
+header {
+    position: relative;
+    @media #{$small}{
+        padding: 30px 50px;
+        nav {
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+            width: calc(100% - 200px);
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .menu {
+            display: none !important;
+        }
+    }
+    @media #{$mobile} {
+        nav {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+            border: 1px solid $text-color;
+            border-radius: 4px;
+            background-color: $black;
+            ul {
+                padding-top: 20px ;
+                text-align: center;
+                li {
+                    margin-bottom: 20px;
+                    a {
+                        color: $white !important;
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                &.sign-in {
+                    margin-bottom: 20px;
+                    color: $white;
+                }
+            }
+        }
+    }
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        font-size: 18px;
+        font-weight: 600;
+        color: $black;
+    }
+    nav {
+        display: none;
+        ul {
+            li {
+                a {
+                    color: $text-color;
+                    font-size: 15px;
+                    font-weight: 500;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .close {
+        display: none;
+        cursor: pointer;
+        i {
+            font-size: 30px;
+            cursor: pointer;
+            color: $black;
+        }
+    }
+    .menu {
+        cursor: pointer;
+    }
+}
